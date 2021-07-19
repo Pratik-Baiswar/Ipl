@@ -1,0 +1,64 @@
+.player-bio {
+  display: flex;
+  margin-bottom: 20px;
+}
+#teamCSK {
+  background: linear-gradient(136deg, #fdb913, #f85c00);
+}
+#teamMI {
+  background: linear-gradient(136deg, #005da0, #003a63);
+}
+#teamRCB {
+  background: linear-gradient(136deg, #000, #464646);
+}
+#teamDC {
+  background: linear-gradient(136deg, #004c93, #0358a7);
+}
+#teamPK {
+  background: linear-gradient(136deg, #aa4545, #740f0b);
+}
+#teamKKR {
+  background: linear-gradient(136deg, #70458f, #3d2057);
+}
+#teamRR {
+  background: linear-gradient(136deg, #2d4d9d, #172e5e);
+}
+#teamSRH {
+  background: linear-gradient(136deg, #fb643e, #b81c25);
+}
+.img-wrapper {
+  width: 250px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.player-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.player-detail {
+  padding: 30px;
+  color: white;
+}
+.player-name {
+  font-size: 40px;
+}
+@media screen and (max-width: 480px) {
+  .player-bio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .img-wrapper {
+    margin: 0 auto;
+  }
+  .player-detail > h3 {
+    margin-bottom: 10px;
+  }
+  .player-detail > h4 {
+    margin-bottom: 10px;
+  }
+  .player-detail > p {
+    margin-bottom: 10px;
+  }
+}

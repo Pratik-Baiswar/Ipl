@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+#topbar {
+  width: 100%;
+  box-shadow: 0 2px 5px #ccc;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 2%;
+  height: 10vh;
+  z-index: 10;
+}
+.fas {
+  cursor: pointer;
+}
+#left-section {
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+}
+#left-section #ipl-logo {
+  width: 10%;
+}
+#ipl-logo img {
+  width: 60px;
+  height: 60px;
+}
+#right-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#search-wrapper,
+#add-team {
+  max-width: 400px;
+  position: relative;
+  margin-left: 25px;
+}
+#search-wrapper > i,
+#add-team > i {
+  position: absolute;
+  color: #999;
+  font-size: 18px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+#search-box,
+#add-box {
+  width: 100%;
+  border: 1px solid rgb(245, 242, 242);
+  background-color: rgb(245, 242, 242);
+  box-sizing: border-box;
+  padding: 10px 24px 8px 48px;
+  color: black;
+  outline: none;
+}
+#add-team > a {
+  text-decoration: none;
+  color: black;
+  margin-left: 32px;
+  font-weight: 600;
+}
+main {
+  width: 100%;
+  min-height: 80vh;
+  margin-top: 100px;
+  padding-bottom: 8%;
+}
+#team-grid {
+  padding: 4% 8% 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-card-wrapper {
+  width: 23.5%;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+.team-card {
+  text-align: center;
+  text-decoration: none;
+}
+.team {
+  border-radius: 10px;
+  min-height: 350px;
+  background: linear-gradient(136deg, #004c93, #0358a7);
+}
+#team1 {
+  background: linear-gradient(136deg, #fdb913, #f85c00);
+}
+#team2 {
+  background: linear-gradient(136deg, #005da0, #003a63);
+}
+#team3 {
+  background: linear-gradient(136deg, #000, #464646);
+}
+#team4 {
+  background: linear-gradient(136deg, #004c93, #0358a7);
+}
+#team5 {
+  background: linear-gradient(136deg, #aa4545, #740f0b);
+}
+#team6 {
+  background: linear-gradient(136deg, #70458f, #3d2057);
+}
+#team7 {
+  background: linear-gradient(136deg, #2d4d9d, #172e5e);
+}
+#team8 {
+  background: linear-gradient(136deg, #fb643e, #b81c25);
+}
+.card-info {
+  padding: 10px;
+  position: relative;
+}
+.team-logo {
+  background-image: url(https://www.iplt20.com/resources/v4.24.0/i/sprites/tLogo158x-sprite.png);
+  background-repeat: no-repeat;
+  background-position: -632px -158px;
+  display: block;
+  width: 158px;
+  height: 158px;
+  position: absolute;
+  top: -4%;
+  left: 20%;
+}
+#CSK {
+  background-position: -158px 0;
+}
+#MI {
+  background-position: -316px -316px;
+}
+#RCB {
+  background-position: 0 0;
+}
+#DC {
+  background-position: -474px -316px;
+}
+#PK {
+  background-position: -474px 0;
+}
+#KKR {
+  background-position: -316px -158px;
+}
+#RR {
+  background-position: -158px -474px;
+}
+#SRH {
+  background-position: -632px 0;
+}
+.card-details {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+.card-title {
+  color: white;
+  font-weight: 600;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+.home-stadium {
+  color: white;
+  margin: 15px 0;
+  font-size: 14px;
+}
+.card-link {
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+footer {
+  width: 100%;
+  background-color: #1c1b1e;
+  display: flex;
+  justify-content: center;
+  padding: 4% 8%;
+}
+footer > div:first-of-type {
+  padding-left: 0;
+}
+footer > div {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.footer-heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  opacity: 0.9;
+  letter-spacing: 1px;
+  margin: 16px 0;
+}
+.footer-link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-top: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 0.8;
+}
+@media screen and (max-width: 480px) {
+  #topbar {
+    padding: 10px 4%;
+  }
+  main {
+    padding: 0 20px;
+  }
+  .team-card-wrapper {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer > div {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+}

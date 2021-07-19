@@ -1,0 +1,98 @@
+.wrapper {
+  background-repeat: no-repeat;
+  padding: 2% 4%;
+  position: relative;
+  color: white;
+}
+.logo {
+  background-image: url(https://www.iplt20.com/resources/v4.24.0/i/sprites/tLogo158x-sprite.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 158px;
+  height: 158px;
+  margin-bottom: 25px;
+}
+.team-name {
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  font-size: 36px;
+}
+span {
+  font-weight: 700;
+  margin-left: 20px;
+}
+#team-squad-title {
+  margin: 20px 35px;
+}
+#player-grid {
+  width: 100%;
+  padding: 2% 3%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.player-card-wrapper {
+  width: 18%;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #ccc;
+}
+.player-card-wrapper a {
+  text-decoration: none;
+  color: black;
+}
+.player-img-wrapper {
+  height: 180px;
+  width: 100%;
+  /* background-color: yellow; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 10px;
+}
+.player-img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.player-details {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px 5px;
+}
+.player-details h3 {
+  text-transform: uppercase;
+}
+.team-ini {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.player-details p {
+  margin-bottom: 5px;
+}
+.player-status {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 480px) {
+  .team-name {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+  }
+  .team-info p {
+    margin-bottom: 10px;
+  }
+  #player-grid {
+    padding: 2% 10%;
+  }
+  .player-card-wrapper {
+    width: 100%;
+  }
+  span {
+    font-weight: 700;
+    margin-left: 15px;
+  }
+}
